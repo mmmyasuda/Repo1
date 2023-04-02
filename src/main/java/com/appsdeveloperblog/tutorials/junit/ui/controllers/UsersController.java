@@ -35,7 +35,7 @@ public class UsersController {
     }
 
     @GetMapping
-    public List<UserRest> getUsers(@RequestParam(value = "page", defaultValue = "0") int page,
+    public List<UserRest> getUsers(@RequestParam(value = "page2", defaultValue = "0") int page,
                                    @RequestParam(value = "limit", defaultValue = "2") int limit) {
         List<UserDto> users = usersService.getUsers(page, limit);
 
